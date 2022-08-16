@@ -1,0 +1,33 @@
+<%- include('partials/header'); %>
+<body>
+    <%- include('partials/navbar'); %>
+    <div class="container">
+        <br>
+        <hr>
+        <h2><%= pergunta.titulo%></h2>
+        <hr>
+        <p><%= pergunta.descricao%></p>
+        <form method="POST" action="/responder">
+            <label>Resposta</label>
+            <textarea class="form-control" placeholder="Digite sua resposta aqui.." name="corpo"></textarea><br>
+            <input type="hidden" name="valuePergunta" value="<%=pergunta.id%>">  <%# campo de parametro %>
+            <button type="submit" class="btn btn-primary"> Responder</button>
+            <a href="/" class="btn btn-secondary">Voltar</a>
+        </form>
+        <hr>
+        <h3>Respostas</h3>
+        <% respostas.forEach(resposta => { %>
+            <div class="card border-card">
+                <div class="card-body userimg">
+                    <div class="user">
+                        <img class="image-logo-anon" src="/img/anon.png">
+                    </div>
+                    <label style="margin-right: 5px;">Anonimo: </label>
+                    <p style="vertical-align:middle;"> <%= resposta.corpo %> </p>
+                </div>
+            </div>
+            <br>
+        <% }); %>
+    </div>
+</body>
+<%- include('partials/footer'); %>

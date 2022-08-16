@@ -1,0 +1,44 @@
+
+label {
+    font-weight: 500;
+    color: #343a40 !important;
+}
+
+.userimg {
+    display: flex;
+}
+
+.user {
+    display: flex;
+}
+
+input {
+    color: #343a40 !important;
+}
+
+h3 {
+    color: #343a40 !important;
+}
+
+body {
+    background-color: #dbdbdb;
+}
+
+.image-logo {
+    max-width: 40px;
+    height: 40px;
+}
+.border-card {
+    border-radius: 10px;
+    border-right: 20px solid #007bff;
+}
+
+.image-logo-anon {
+    max-width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+#form-perguntas {
+    margin-top: 8vh;
+}
