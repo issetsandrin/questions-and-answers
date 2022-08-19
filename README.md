@@ -1,4 +1,4 @@
-# Perguntas e repostas
+# Perguntas e respostas
 Sistema web feito com Node.JS de perguntas e respostas
 
 Este sistema foi feito com base no conhecimento adquirido durante o meu periodo de estudos de Node.JS.<br>
